@@ -38,9 +38,13 @@ body{
 
 .dropdown{
     display:flex;
-    flex-flow:column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+    flex-flow:row;
+    margin-top:1rem;
+    /* flex-flow:column;
+    justify-content:center;
+    align-items:center; */
 }
 
 .from{
@@ -65,9 +69,19 @@ body{
 }
 
 .result{
-    background-color:rgb(159, 231, 159);
+    background-color:rgb(137, 9, 118);
     border:0.01rem black solid;
     font-weight:bold;
+    margin-left:17.5rem;
+    margin-right:17.5rem;
+    padding-left:4rem;
+    padding-right:4rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    font-size:1rem;
+    border-radius:0.75rem;
+    color:white;
+    cursor:pointer;
 }
 
 .message{
@@ -76,7 +90,7 @@ body{
     justify-content:center;
     align-items:center;
     padding-left:3%;
-    margin-top:10%;
+    padding-top:5%;
 }
 
 p{
@@ -85,8 +99,10 @@ p{
 }
 
 
-input,button,select{
-    width:15rem;
+input,select{
+    width:20rem;
     height:1.75rem;
     border-radius:0.75rem;
+    font-weight:bold;
+    cursor:pointer;
 }
