@@ -7,8 +7,11 @@ body{
     align-items: center;
 }
 .Convertor{
+    border:0.002rem rgb(224, 149, 149) solid;
+    border-radius:1%;
     display:flex;
     flex-flow: column;
+    justify-content:center;
     align-items: center;
     background-color:pink;
     overflow-x:auto;
