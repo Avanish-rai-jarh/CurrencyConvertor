@@ -18,3 +18,54 @@ body{
     overflow-y:auto;
     padding:5%;
 }
+
+.amount{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.dropdown{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.from{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.To{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.select{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.result{
+    padding:15%;
+    background-color:rgb(159, 231, 159);
+    border:0.01rem black solid;
+}
+
+.message{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    padding:15%;
+}
+
+
