@@ -5,8 +5,6 @@ body{
     display:flex;
     justify-content:center;
     align-items: center;
-    overflow-x:auto;
-    overflow-y:auto;
 }
 .Convertor{
     border:0.002rem rgb(224, 149, 149) solid;
@@ -16,14 +14,17 @@ body{
     justify-content:center;
     align-items: center;
     background-color:pink;
-    overflow-x:auto;
+    /* overflow-x:auto;
     overflow-y:auto;
     padding-left:8%;
     padding-right:8%;
     padding-top:4%;
     padding-bottom:4%;
-    margin:2rem;
-    opacity:1;
+    opacity:1; */
+    width:80%;
+    max-width:22rem;
+    padding:0.75rem;
+
 }
 
 .amount{
@@ -47,7 +48,7 @@ body{
     align-items:center;
 }
 
-.To{
+.to{
     display:flex;
     flex-flow:column;
     justify-content:center;
@@ -62,7 +63,7 @@ body{
 }
 
 .result{
-    margin-left:13%;
+    margin-left:22%;
     margin-top:0%;
     background-color:rgb(159, 231, 159);
     border:0.01rem black solid;
@@ -84,4 +85,11 @@ p{
     font-weight:bold;
 }
 
+.select img{
+    width:100%;
+    width:2rem;
+}
 
+select{
+    width:8rem;
+}
