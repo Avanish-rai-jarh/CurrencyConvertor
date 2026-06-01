@@ -103,7 +103,7 @@ let newEle3=document.createElement("a");
         side.append(newEle3);
 
 let snip="close";
-sp.addEventListener("click",()=>{
+function toggl(){
     if(snip=="close"){
         side.style.left="0rem";
         snip="open";
@@ -112,4 +112,7 @@ sp.addEventListener("click",()=>{
         side.style.left="-11rem";
         snip="close";
     }
-});
+};
+
+sp.addEventListener("touchStart",toggl());
+sp.addEventListener("click",toggl());
