@@ -113,6 +113,6 @@ function toggl(){
         snip="close";
     }
 };
+sp.addEventListener("click",toggl);
+sp.addEventListener("touchStart",toggl);
 
-sp.addEventListener("touchStart",toggl());
-sp.addEventListener("click",toggl());
