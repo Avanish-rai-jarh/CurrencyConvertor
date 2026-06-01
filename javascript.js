@@ -78,3 +78,19 @@ window.addEventListener("load",()=>{
     litstener();
 })
 
+let back=document.querySelector("body");
+let mode=document.querySelector(".mode");
+let alpha="original";
+let beta=getComputedStyle(back).backgroundImage;
+
+mode.onclick=()=>{
+    if(alpha=="original"){
+        back.style.backgroundImage = "none";
+        back.style.backgroundColor = "black";
+        alpha="black";
+    }
+    else{
+        back.style.backgroundImage = beta;
+        alpha="original";
+    }
+};

@@ -6,19 +6,22 @@
 body{
     margin:0;
     min-height:100vh;
-    background-color:rgb(237, 211, 164);
+    background-color:#e3a7a7;
     display:flex;
     justify-content:center;
     align-items: center;
+    flex-direction:column;
+    background-image:url("pexels-rudonni-7114280.jpg") ;
+    background-size:cover;
 }
 .Convertor{
-    border:0.002rem rgb(224, 149, 149) solid;
-    border-radius:1%;
+    border:0.002rem rgb(78, 0, 0) solid;
+    border-radius:1rem;
     display:flex;
     flex-flow: column;
     justify-content:center;
     align-items: center;
-    background-color:pink;
+    background-color:transparent;
     /* overflow-x:auto;
     overflow-y:auto;
     padding-left:8%;
@@ -27,7 +30,8 @@ body{
     padding-bottom:4%;
     opacity:1; */
     height:75vh;
-    max-width:80rem;
+    width:25rem;
+    max-width:90rem;
     padding:0.01rem;
     box-sizing:border-box;
 }
@@ -72,7 +76,7 @@ body{
 .result{
     margin-left:22%;
     margin-top:0%;
-    background-color:rgb(77, 9, 9);
+    background-color:#831C91;
     border:0.01rem black solid;
     font-weight:bold;
     padding:4%;
@@ -81,6 +85,7 @@ body{
     font-weight:bold;
     border-radius:0.5rem;
     cursor:pointer;
+    outline:none;
 }
 
 .message{
@@ -90,11 +95,14 @@ body{
     align-items:center;
     padding-left:3%;
     margin-top:10%;
+    color:#ffffff;
+    font-size:1.1rem;
 }
 
 p{
-    color:rgb(65, 8, 8);
+    color:#306D29;
     font-weight:bold;
+    font-size:1.1rem;
 }
 
 .select img{
@@ -107,6 +115,10 @@ select{
     height:2rem;
     font-weight:bold;
     cursor:pointer;
+    border-radius:0.5rem;
+    border:0.05rem black solid;
+    background-color: #F7F6D3;
+    outline:none;
 }
 
 input{
@@ -114,8 +126,28 @@ input{
     height:1.75rem;
     font-size:1rem ;
     font-weight:bold;
+    border-radius:0.5rem;
+    border:0.05rem black solid;
+    background-color: #F7F6D3;
+    outline:none;
 }
 
 .h22{
     padding-top:0rem;
+    color:#00F7FF;
+}
+
+.snap{
+    font-size:2rem;
+    position: absolute;
+    top:0rem;
+    left:0rem;
+    color:rgb(74, 47, 47);
+}
+.mode{
+    font-size:2rem;
+    position: absolute;
+    top:0rem;
+    right:0rem;
+    color:rgb(40, 104, 150);
 }
