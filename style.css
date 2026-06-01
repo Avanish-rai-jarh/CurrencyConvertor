@@ -151,3 +151,19 @@ input{
     right:0rem;
     color:rgb(40, 104, 150);
 }
+
+.sidebar{
+    display:flex;
+    flex-flow:column;
+    text-align:center;
+    position:fixed;
+    top:0;
+    left:-11rem;
+    margin-top:2rem;
+    width:11rem;
+    height:100vh;
+    border:0.05rem white solid;
+    background-color:transparent;
+    transition:0.3s;
+    overflow:hidden;
+}
