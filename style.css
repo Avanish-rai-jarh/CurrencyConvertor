@@ -26,9 +26,9 @@ body{
     padding-top:4%;
     padding-bottom:4%;
     opacity:1; */
-    width:80%;
-    max-width:22rem;
-    padding:0.75rem;
+    height:75vh;
+    max-width:80rem;
+    padding:0.01rem;
     box-sizing:border-box;
 }
 
@@ -51,6 +51,7 @@ body{
     flex-flow:column;
     justify-content:center;
     align-items:center;
+    margin-top:3rem;
 }
 
 .to{
@@ -58,6 +59,7 @@ body{
     flex-flow:column;
     justify-content:center;
     align-items:center;
+    margin-top:3rem;
 }
 
 .select{
@@ -70,10 +72,15 @@ body{
 .result{
     margin-left:22%;
     margin-top:0%;
-    background-color:rgb(159, 231, 159);
+    background-color:rgb(77, 9, 9);
     border:0.01rem black solid;
     font-weight:bold;
     padding:4%;
+    font-size:1rem;
+    color:white;
+    font-weight:bold;
+    border-radius:0.5rem;
+    cursor:pointer;
 }
 
 .message{
@@ -97,6 +104,18 @@ p{
 
 select{
     width:8rem;
+    height:2rem;
+    font-weight:bold;
+    cursor:pointer;
 }
 
+input{
+    margin-top:2rem;
+    height:1.75rem;
+    font-size:1rem ;
+    font-weight:bold;
+}
 
+.h22{
+    padding-top:0rem;
+}
