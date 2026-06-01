@@ -1,11 +1,10 @@
-
+const clickSound=new Audio("u_xg7ssi08yr-coins-drop-1-404409.mp3");
 const select=document.querySelectorAll(".dropdown select");
 
 const btn=document.querySelector("form button");
 
 const fromCurr=document.querySelector(".from select");
 const toCurr=document.querySelector(".to select");
-
 
 for(let sel of select){
     for(let curr in countryList){
@@ -53,6 +52,8 @@ function updateFlag(event){
 }
 
 btn.addEventListener("click",async (eve)=>{
+    clickSound.currentTime=0;
+    clickSound.play();
     eve.preventDefault();
    litstener();
 });
@@ -96,23 +97,72 @@ let newEle3=document.createElement("a");
         newEle3.href="https://www.instagram.com/jarhnitian.srinagar/?utm_source=wa4a&utm_campaign=wa_vpl_m2_vf_web";
         newEle3.style.cursor="pointer";
         newEle3.style.color="white";
+        side.append(document.createElement("br"));
+        side.append(document.createElement("br"));
         side.append(newEle1);
+        side.append(document.createElement("br"));
         side.append(document.createElement("br"));
         side.append(newEle2);
         side.append(document.createElement("br"));
+        side.append(document.createElement("br"));
         side.append(newEle3);
+
+        newEle1.addEventListener("click",anch);
+        newEle2.addEventListener("click",anch);
+        newEle3.addEventListener("click",anch);
+
+newEle1.onmouseover=()=>{
+newEle1.style.textShadow="0 0 1.5rem white";
+newEle1.style.transition="0.3s";
+}
+newEle2.onmouseover=()=>{
+newEle2.style.textShadow="0 0 1.5rem white";
+newEle2.style.transition="0.3s";
+}
+newEle3.onmouseover=()=>{
+newEle3.style.textShadow="0 0 1.5rem white";
+newEle3.style.transition="0.3s";
+}
+newEle1.onmouseout=()=>{
+newEle1.style.textShadow="none";
+}
+newEle2.onmouseout=()=>{
+newEle2.style.textShadow="none";
+}
+newEle3.onmouseout=()=>{
+newEle3.style.textShadow="none";
+}
 
 let snip="close";
 function toggl(){
     if(snip=="close"){
         side.style.left="0rem";
+        side.style.boxShadow="0 0 45px rgb(255, 208, 0)";
         snip="open";
     }
     else{
         side.style.left="-11rem";
+        side.style.boxShadow="none";
         snip="close";
     }
 };
 sp.addEventListener("click",toggl);
 sp.addEventListener("touchStart",toggl);
 
+let btn_=document.querySelector(".result");
+btn_.onmouseover=()=>{
+    btn_.style.boxShadow="0 0 10px violet,0 0 20px violet,0 0 30px violet";
+    btn_.style.transition="0.6s";
+};
+
+btn_.onmouseout=()=>{
+    btn_.style.boxShadow="none";
+};
+
+function anch(){
+    console.log("clicked");
+    side.style.left="-11rem";
+    side.style.transition="0.6s";
+    side.style.boxShadow="none";
+    snip="close";
+}
